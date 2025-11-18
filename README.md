@@ -8,6 +8,8 @@
 This repository contains our group project for *Deep Learning*, taught by Professor Yuan.  
 Our goal is to build a robust classifier that distinguishes AI-generated artwork from human-created artwork using a multimodal feature-extraction pipeline combining [**OpenAI CLIP**](https://arxiv.org/abs/2103.00020) and the **Stable Diffusion Turbo VAE**. We also apply class-specific [img2img](https://github.com/GaParmar/img2img-turbo) augmentations to strengthen stylistic robustness and improve generalization.
 
+Our work was partially inspired by [Castellano et al.’s](https://arxiv.org/abs/2103.00020) exploration of AI-generated art classification and their emphasis on improving model explainability using Grad-CAM and multimodal LLMs. Their study highlights the difficulty in distinguishing synthetic from human-made artwork and the importance of visual cues. We build on this motivation and focus on developing a more robust feature-extraction pipeline that leverages additional preprocessing from CLIP and Stable Diffusion VAE representations.
+
 ---
 
 ### **Dataset**
