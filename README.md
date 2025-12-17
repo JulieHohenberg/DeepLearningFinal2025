@@ -1,6 +1,7 @@
 # AI-Generated vs. Human-Created Art Classifier with Explainability
 ### Deep Learning (CSCI3370) Group Project — Boston College  
 **Professor:** [Dr. Yuan Yuan](https://yyuanad.github.io/) 
+
 **Student Team:** Xiaoyin Liu, Josiah Kondo, Tim Hays, and Julie Hohenberg
 
 This repository contains our group project for *Deep Learning*, taught by Professor Yuan.  
