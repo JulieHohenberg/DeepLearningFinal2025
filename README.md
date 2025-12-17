@@ -17,7 +17,7 @@ Our work was partially inspired by [Castellano et al.’s](https://arxiv.org/abs
 Our primary dataset is the [Kaggle AI vs. Human Art Classification dataset](https://www.kaggle.com/datasets/doctorstrange420/real-and-fake-ai-generated-art-images-dataset). It contains two balanced classes: AI-generated artwork produced by diffusion models or other generative systems, and non-AI-generated (human-created) photographs, paintings, and traditional artwork scraped from WikiArt. Each class contains 10,821 images, spanning a wide range of subjects, textures, and artistic styles. The dataset is used for supervised training, validation, and benchmark evaluation. Raw images are downloaded directly via the Kaggle API and stored locally.
 
 ### Out-of-Distribution Dataset (Childhood Artwork)
-In addition to the benchmark dataset, we evaluate the strongest-performing classifier on a small, out-of-distribution dataset consisting of childhood artwork created by one author (Tim Hays) and AI-generated images produced using Gemini’s Nano Banana model. This dataset is **not used during training** and is intended to probe model generalization and explainability under asymmetric distribution shift. While the AI-generated images may partially overlap with the distribution of generative models seen during training, the human-created childhood artwork is substantially out-of-distribution relative to the Kaggle benchmark. This dataset is used exclusively for robustness analysis, explainability experiments, and qualitative comparison against general-purpose multimodal and language models.
+In addition to the benchmark dataset, we evaluate the strongest-performing classifier on a small, out-of-distribution dataset consisting of childhood artwork created by one author (Tim Hays) and AI-generated images produced using Gemini’s Nano Banana model. This dataset is **not used during training** and is intended to probe model generalization and explainability under asymmetric distribution shift. While the AI-generated images may partially overlap with the distribution of generative models seen during training, the human-created childhood artwork is substantially out-of-distribution relative to the Kaggle benchmark. This dataset is used exclusively for robustness analysis, explainability experiments, and qualitative comparison against general-purpose multimodal and language models. The dataset can be viewed [here](https://drive.google.com/drive/folders/1eNAi9rbSuIrqLiqtpi0qWF9vcLhLmttZ?usp=drive_link).
 
 ---
 
@@ -58,10 +58,6 @@ All experimental, training, inference, and explainability work is contained in t
 - **Saved Classifier Models**  
   Trained MLP and benchmark model checkpoints:  
   https://drive.google.com/drive/folders/14ZK3vldCWk_nLoaTcjqub5owA-ZNqgtz?usp=sharing
-
-- **Childhood Artwork Evaluation Dataset (Tim Hays)**  
-  Independent evaluation set consisting of real childhood artwork created by **Tim Hays (author)** and AI-generated images produced using **Gemini Nano Banana**:  
-  https://drive.google.com/drive/folders/1eNAi9rbSuIrqLiqtpi0qWF9vcLhLmttZ?usp=drive_link
 
 - **Full LLM Text Explainability Results**  
   Google Sheets containing all model-generated explanations and annotations:  
