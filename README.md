@@ -1,7 +1,7 @@
 # AI-Generated vs. Human-Created Art Classifier with Explainability
 ### Deep Learning (CSCI3370) Group Project — Boston College  
 **Professor:** [Dr. Yuan Yuan](https://yyuanad.github.io/) 
-
+### **Student Team:** Xiaoyin Liu, Josiah Kondo, Tim Hays, and Julie Hohenberg
 
 This repository contains our group project for *Deep Learning*, taught by Professor Yuan.  
 Our goal is to build a robust classifier that distinguishes AI-generated artwork from human-created artwork using a multimodal feature-extraction pipeline combining [**OpenAI CLIP**](https://arxiv.org/abs/2103.00020) and the **Stable Diffusion Turbo VAE**. We also apply class-specific [img2img](https://github.com/GaParmar/img2img-turbo) augmentations to strengthen stylistic robustness and improve generalization. In addition to benchmark classification performance, the project emphasizes interpretability. We provide visual explanations using Grad-CAM and occlusion-based saliency, and generate natural-language explanations grounded in latent feature activations using large language models.
@@ -61,10 +61,5 @@ All experimental, training, inference, and explainability work is contained in t
   Google Sheets containing all model-generated explanations and annotations:  
   https://docs.google.com/spreadsheets/d/1ndK6W_tVSY7-Q02GdzTKe0UyhRFGvhrS2AC3KjYYV_E/edit?usp=sharing
   
----
-
-### **Team**
-Xiaoyin Liu, Josiah Kondo, Tim Hays, and Julie Hohenberg
-
 ---
 
