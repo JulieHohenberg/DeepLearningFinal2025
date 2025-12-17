@@ -2,11 +2,9 @@
 ### Deep Learning (CSCI3370) Group Project — Boston College  
 **Professor:** [Dr. Yuan Yuan](https://yyuanad.github.io/) 
 
-> **Project Status: In Progress**  
-> This repository is actively being developed and updated.
 
 This repository contains our group project for *Deep Learning*, taught by Professor Yuan.  
-Our goal is to build a robust classifier that distinguishes AI-generated artwork from human-created artwork using a multimodal feature-extraction pipeline combining [**OpenAI CLIP**](https://arxiv.org/abs/2103.00020) and the **Stable Diffusion Turbo VAE**. We also apply class-specific [img2img](https://github.com/GaParmar/img2img-turbo) augmentations to strengthen stylistic robustness and improve generalization.
+Our goal is to build a robust classifier that distinguishes AI-generated artwork from human-created artwork using a multimodal feature-extraction pipeline combining [**OpenAI CLIP**](https://arxiv.org/abs/2103.00020) and the **Stable Diffusion Turbo VAE**. We also apply class-specific [img2img](https://github.com/GaParmar/img2img-turbo) augmentations to strengthen stylistic robustness and improve generalization. In addition to benchmark classification performance, the project emphasizes interpretability. We provide visual explanations using Grad-CAM and occlusion-based saliency, and generate natural-language explanations grounded in latent feature activations using large language models.
 
 Our work was partially inspired by [Castellano et al.’s](https://arxiv.org/abs/2103.00020) exploration of AI-generated art classification and their emphasis on improving model explainability using Grad-CAM and multimodal LLMs. Their study highlights the difficulty in distinguishing synthetic from human-made artwork and the importance of visual cues. We build on this motivation and focus on developing a more robust feature-extraction pipeline that leverages additional preprocessing from CLIP and Stable Diffusion VAE representations.
 
@@ -23,24 +21,6 @@ Our dataset comes from the [Kaggle AI vs. Human Art Classification dataset](http
 - Fused 768-dimensional feature representations  
 - Class-specific img2img augmentations using SD-Turbo  
 - MLP classifier with strong performance on held-out test data   
-
----
-## **Repository Structure**
-
-### `notebooks/`
-All experimental, training, inference, and explainability work is contained in the `notebooks/` directory:
-
-- **`ResNet_finetuned.ipynb`**  
-  Fine-tuned ResNet benchmark model for AI vs. human art classification.
-
-- **`Tim_LLM_final.ipynb`**  
-  LLM-based textual explainability pipeline for classifier predictions.
-
-- **`classifier_inference_final.ipynb`**  
-  Final inference notebook used to evaluate the classifier on the Beatles images and Tim’s childhood artwork.
-
-- **`img2img_clip_mlp_final.ipynb`**  
-  End-to-end pipeline including img2img augmentation, CLIP feature extraction, feature fusion, and MLP classification.
 
 ---
 
