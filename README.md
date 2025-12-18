@@ -42,7 +42,7 @@ All experimental, training, inference, and explainability work is contained in t
   End-to-end pipeline including img2img augmentation, CLIP feature extraction, feature fusion, MLP classification, and visual explainability. Google Drive link [here](https://colab.research.google.com/drive/1SsZcGphfzifIzMqmkzAkiFjra8AhC8S2?usp=sharing).
 
 - **`Tim_LLM_final.ipynb`**  
-  LLM-based textual explainability pipeline for classifier predictions. Google Drive link [here}(https://colab.research.google.com/drive/1zctwsM5SdqHjdlnFN9pZPs1cwq1jCbSQ?usp=sharing).
+  LLM-based textual explainability pipeline for classifier predictions. Google Drive link [here](https://colab.research.google.com/drive/1zctwsM5SdqHjdlnFN9pZPs1cwq1jCbSQ?usp=sharing).
 
 - **`classifier_inference_final.ipynb`**  
   Final inference notebook used to evaluate the classifier on the Beatles images and Tim’s childhood artwork. Google Drive link [here](https://colab.research.google.com/drive/13ZmN3D_oYj-iM0LQOvS13xlxj-hheFmi?usp=sharing).
